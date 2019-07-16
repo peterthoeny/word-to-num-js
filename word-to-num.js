@@ -103,10 +103,11 @@ WordToNum.prototype.normalize = function(text) {
     .replace(/([0-9])th\b/g, '$1')
     .replace(/([a-zA-Z]+)([^a-zA-Z]*)/g, function(match, p1, p2) {
         //console.log('p1: '+p1+', p2: "'+p2+'"');
-        var s = singles[p1];
-        var t = tens[p1];
-        var m = magnitude[p1];
-        if (s != null || (isNum && p1.match(/^o$/i))) {
+        var p1l = p1.toLowerCase();
+        var s = singles[p1l];
+        var t = tens[p1l];
+        var m = magnitude[p1l];
+        if (s != null || (isNum && p1l.match(/^o$/i))) {
             s = s || 0;
             isNum = true;
             if (frac.length) {
@@ -126,7 +127,7 @@ WordToNum.prototype.normalize = function(text) {
                 g = g + t;
             }
             ws = p2;
-        } else if (p1 == 'hundred') {
+        } else if (p1l == 'hundred') {
             isNum = true;
             hasTens = false;
             g = g * 100;
@@ -137,9 +138,9 @@ WordToNum.prototype.normalize = function(text) {
             n = n + g * m
             g = 0;
             ws = p2;
-        } else if (isNum && p1 === 'and') {
+        } else if (isNum && p1l === 'and') {
             ws = p2;
-        } else if (isNum && p1.match(/^(dot|point)$/)) {
+        } else if (isNum && p1l.match(/^(dot|point)$/)) {
             frac = '.';
             ws = p2;
         } else if (isNum) {

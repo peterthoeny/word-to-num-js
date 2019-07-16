@@ -1,4 +1,4 @@
-/* https://github.com/peterthoeny/word-to-num, MIT License */
+/* https://github.com/peterthoeny/word-to-num-js, MIT License */
 
 // word-to-numb tests
 let test = [

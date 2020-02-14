@@ -1,22 +1,22 @@
 {
-  "name": "word-to-num-js",
-  "version": "0.1.0",
-  "description": "Convert word-phrases to a string of digits",
-  "author": "Peter Thoeny",
-  "license": "MIT",
-  "homepage": "https://github.com/peterthoeny/word-to-num",
-  "main": "word-to-num.js",
-  "scripts": {
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/peterthoeny/word-to-num.git"
-  },
-  "bugs": {
-    "url": "https://github.com/peterthoeny/word-to-num/issues"
-  },
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+    "name": "word-to-num-js",
+    "version": "0.1.0",
+    "description": "Convert word-phrases to a string of digits",
+    "author": "Peter Thoeny",
+    "license": "MIT",
+    "homepage": "https://github.com/peterthoeny/word-to-num-js",
+    "main": "word-to-num.js",
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peterthoeny/word-to-num-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/peterthoeny/word-to-num-js/issues"
+    },
+    "devDependencies": {
+    },
+    "dependencies": {
+    }
 }

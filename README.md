@@ -1,4 +1,4 @@
-# WordToNum (js) [![Build Status](https://travis-ci.org/peterthoeny/word-to-num-js.svg?branch=master)](https://travis-ci.org/peterthoeny/word-to-num-js)
+# WordToNum (js)
 
 ## Convert a string containing word-numbers to all their digits
 WordToNum lets you normalize any string for all of its word-numbers into
